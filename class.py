@@ -16,5 +16,5 @@ class phone :
 
 phone1 = phone()
 print(phone1.name, phone1.model, phone1.color, phone1.price)
-
+  
 print(phone1.make_call("hello i am calling you"))
