@@ -18,13 +18,19 @@ kamal = Cricketer('Kamal', 39, 68, 94)
 jack = Cricketer('Jack', 38, 68, 91)
 kalam = Cricketer('Kalam', 227, 68, 95)
 
-if sakib > musfiq and kamal and jack and kalam:
-    print("sakib is older")
-elif musfiq > sakib and kamal and jack and kalam:
-    print("Musfic is older")
-elif kamal > sakib and musfiq and jack and kalam:
-    print("kamal is older")
-elif jack > sakib and musfiq and kamal and kalam:
+if sakib > musfiq and sakib > kamal and sakib > jack and sakib > kalam:
+    print("Sakib is older")
+elif musfiq > sakib and musfiq > kamal and musfiq > jack and musfiq > kalam:
+    print("Musfiq is older")
+elif kamal > sakib and kamal > musfiq and kamal > jack and kamal > kalam:
+    print("Kamal is older")
+elif jack > sakib and jack > musfiq and jack > kamal and jack > kalam:
     print("Jack is older")
-elif kalam > sakib and musfiq and jack and kamal:
-    print("kalam is older")
+elif kalam > sakib and kalam > musfiq and kalam > jack and kalam > kamal:
+    print("Kalam is older")
+
+
+# this will also work
+# Find the oldest cricketer
+# oldest = max(sakib, musfiq, kamal, jack, kalam)
+# print(f"{oldest.name} is the oldest")
